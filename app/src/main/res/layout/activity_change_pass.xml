@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="@string/changepass"
+        android:id="@+id/toolbar_changepass"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:fillViewport="true"
+        android:layout_weight="9.9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:paddingTop="@dimen/canhle40"
+            android:background="@color/backgound"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginBottom="@dimen/canhle30"
+                    android:id="@+id/picturehs"
+                    android:layout_gravity="center"
+                    android:layout_width="@dimen/canhle80"
+                    android:layout_height="@dimen/canhle80"
+                    android:src="@drawable/logo1" />
+                <EditText
+                    android:layout_marginBottom="@dimen/canhle10"
+                    android:id="@+id/pass_old"
+                    android:drawableLeft="@drawable/ic_baseline_key_24"
+                    android:drawablePadding="@dimen/canhle8"
+                    android:hint="@string/oldpass"
+                    android:layout_marginHorizontal="@dimen/canhle30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:layout_marginVertical="@dimen/canhle10"
+                    android:id="@+id/pass_new"
+                    android:drawableLeft="@drawable/ic_baseline_key_24"
+                    android:drawablePadding="@dimen/canhle8"
+                    android:longClickable="false"
+                    android:hint="@string/newpass"
+                    android:layout_marginHorizontal="@dimen/canhle30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:layout_marginTop="@dimen/canhle10"
+                    android:id="@+id/confirmpass_new"
+                    android:drawableLeft="@drawable/ic_baseline_key_24"
+                    android:drawablePadding="@dimen/canhle8"
+                    android:longClickable="false"
+                    android:hint="@string/newcfpass"
+                    android:layout_marginHorizontal="@dimen/canhle30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_changepass"
+                    android:layout_marginTop="@dimen/canhle40"
+                    android:layout_marginHorizontal="@dimen/canhle30"
+                    android:background="@drawable/btn_bogoc"
+                    android:text="@string/changepass"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/size20"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

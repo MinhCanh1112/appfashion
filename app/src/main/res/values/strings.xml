@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Thời trang nam</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    //login register
+    <string name="forgot_password">Quên mật khẩu</string>
+    <string name="chuacotk">Bạn chưa có tài khoản? </string>
+    <string name="password">Mật khẩu</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Xác nhận mật khẩu</string>
+    <string name="dacotk">Bạn đã có tài khoản?</string>
+
+    <string name="login">Đăng nhập</string>
+    <string name="register">Đăng ký</string>
+    //toolbar
+    <string name="cart">Giỏ hàng</string>
+    <string name="changepass">Đổi mật khẩu</string>
+    <string name="contact">Liên hệ</string>
+    <string name="detailproduct">Chi tiết sản phẩm</string>
+    <string name="thanhtoan">Thanh toán</string>
+    <string name="hoadon">Hóa đơn</string>
+    <string name="chitiethoadon">Chi tiết hóa đơn</string>
+    //changepass
+    <string name="oldpass">Mật khẩu cũ</string>
+    <string name="newpass">Mật khẩu mới</string>
+    <string name="newcfpass">Xác nhận mật khẩu mới</string>
+    //contact
+    <string name="callphone">Call Phone</string>
+    <string name="zalo">Zalo</string>
+    <string name="facebook">Facebook</string>
+
+    //cart
+    <string name="all">Tất cả</string>
+    <string name="sum">Tổng thanh toán: </string>
+    <string name="muahng">Mua hàng</string>
+
+    //menu nav
+    <string name="open">Mở</string>
+    <string name="close">Đóng</string>
+    <string name="title_activity_thanhtoan">ThanhtoanActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <androidx.appcompat.widget.Toolbar
+        app:title="@string/detailproduct"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar_detail"/>
+
+    <androidx.core.widget.NestedScrollView
+
+        android:layout_weight="9.9"
+        android:background="@color/backgound"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/canhle450">
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:layout_marginBottom="@dimen/canhle5"
+                    android:id="@+id/viewPager2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+
+                <me.relex.circleindicator.CircleIndicator3
+                    android:id="@+id/ci3"
+                    android:layout_marginBottom="@dimen/canhle3"
+                    app:ci_drawable="@drawable/circleindicator"
+                    android:layout_gravity="bottom|center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/canhle10"/>
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/canhle10"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/canhle5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tensp_detail"
+                    android:layout_marginTop="@dimen/canhle10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Tên sản phẩm"
+                    android:text="Tên sản phẩm"
+                    android:textSize="@dimen/size18"
+                    android:textColor="@color/main2"/>
+                <TextView
+                    android:id="@+id/giasp_detail"
+                    android:layout_marginTop="@dimen/canhle5"
+                    android:layout_marginBottom="@dimen/canhle10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Giá sản phẩm"
+                    android:text="Giá sản phẩm"
+                    android:textSize="@dimen/size17"
+                    android:textColor="#B80A0A"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/backgound"/>
+                <TextView
+                    android:layout_marginTop="@dimen/canhle10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Mô tả"
+                    android:text="Mô tả : "
+                    android:textSize="@dimen/size18"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:paddingHorizontal="@dimen/canhle5"
+                    android:id="@+id/motadetail"
+                    android:layout_marginTop="@dimen/canhle10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Mô tả"
+                    android:textSize="@dimen/size15"
+                    android:textColor="@color/black"/>
+                <ImageView
+                    android:layout_marginTop="@dimen/canhle30"
+                    android:layout_marginBottom="@dimen/canhle10"
+                    android:id="@+id/hinhanhsize"
+                    android:layout_marginHorizontal="@dimen/canhle10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/hinhanh5"
+                    android:layout_marginHorizontal="@dimen/canhle10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/hinhanh6"
+                    android:layout_marginHorizontal="@dimen/canhle10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/hinhanh7"
+                    android:layout_marginHorizontal="@dimen/canhle10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/canhle100" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_weight="0.1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <ImageButton
+            android:background="@color/teal_200"
+            android:id="@+id/themgiohang"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_add_shopping_cart_24"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/muahang"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@color/red"
+            android:text="Mua hàng"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="@dimen/size20" />
+    </LinearLayout>
+</LinearLayout>

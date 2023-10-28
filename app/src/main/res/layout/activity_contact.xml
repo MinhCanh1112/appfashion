@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="@string/contact"
+        android:id="@+id/toolbar_contact"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:fillViewport="true"
+        android:layout_weight="9.9"
+        android:background="@color/backgound"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/canhle100"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/callphone"
+                    android:padding="@dimen/canhle10"
+                    android:background="@drawable/btn_linear"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="@dimen/canhle10"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/canhle100">
+                    <ImageView
+                        android:layout_width="@dimen/canhle50"
+                        android:layout_height="@dimen/canhle50"
+                        android:src="@drawable/callphone"/>
+                    <TextView
+                        android:layout_marginTop="@dimen/canhle3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/callphone"
+                        android:textSize="@dimen/size15"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/facebook"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/canhle100"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_linear"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/canhle10">
+
+                    <ImageView
+                        android:layout_width="@dimen/canhle50"
+                        android:layout_height="@dimen/canhle50"
+                        android:src="@drawable/facebook" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/canhle3"
+                        android:text="@string/facebook"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/zalo"
+                    android:orientation="vertical"
+                    android:background="@drawable/btn_linear"
+                    android:gravity="center"
+                    android:padding="@dimen/canhle10"
+                    android:layout_marginHorizontal="@dimen/canhle10"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/canhle100">
+                    <ImageView
+                        android:layout_width="@dimen/canhle50"
+                        android:layout_height="@dimen/canhle50"
+                        android:src="@drawable/zalo"/>
+                    <TextView
+                        android:layout_marginTop="@dimen/canhle3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/zalo"
+                        android:textSize="@dimen/size15"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
+

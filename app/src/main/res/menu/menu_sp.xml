@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+
+        android:title="TODO"
+        android:icon="@drawable/ic_shopping_cart_white_24dp"
+        android:id="@+id/menu_giohang"
+        app:showAsAction="always"
+        app:actionLayout="@layout/custom_item_giohang" />
+    <item
+        app:showAsAction="always"
+        android:title="TODO"
+        android:id="@+id/menu_nav"
+        android:icon="@drawable/ic_baseline_menu_24"/>
+
+</menu>
+

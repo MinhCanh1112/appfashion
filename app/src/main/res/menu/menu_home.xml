@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="TODO"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:id="@+id/menuhome_search"
+        app:showAsAction="always" />
+    <item
+
+        android:title="TODO"
+        android:icon="@drawable/ic_shopping_cart_white_24dp"
+        android:id="@+id/menuhome_giohang"
+        app:showAsAction="always"
+        app:actionLayout="@layout/custom_item_giohang" />
+    <item
+
+        app:showAsAction="always"
+        android:title="TODO"
+        android:id="@+id/menuhome_user"
+        android:icon="@drawable/ic_person"/>
+
+
+
+</menu>

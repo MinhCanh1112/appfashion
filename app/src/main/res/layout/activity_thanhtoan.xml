@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar_thanhtoan"
+        app:title="@string/thanhtoan"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_weight="9.9"
+        android:background="#F3F3F3"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_marginHorizontal="20dp"
+              android:textColor="@color/black"
+              android:textSize="18sp"
+              android:layout_marginTop="10dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Thông tin liên hệ"/>
+          <LinearLayout
+              android:layout_marginVertical="10dp"
+              android:layout_marginHorizontal="10dp"
+              android:paddingHorizontal="10dp"
+              android:background="@drawable/btn_linear"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+            <EditText
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/namedc"
+                android:hint="Nhập tên"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:textSize="16sp"
+                android:inputType="number"
+                android:layout_marginVertical="10dp"
+                android:id="@+id/mobiledc"
+                android:hint="Nhập số điện thoại"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+          </LinearLayout>
+          <TextView
+              android:layout_marginHorizontal="20dp"
+              android:textColor="@color/black"
+              android:textSize="18sp"
+              android:layout_marginTop="10dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Thông tin địa chỉ"/>
+          <LinearLayout
+              android:layout_marginVertical="10dp"
+              android:layout_marginHorizontal="10dp"
+              android:paddingHorizontal="10dp"
+              android:background="@drawable/btn_linear"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+            <EditText
+                android:textSize="16sp"
+                android:id="@+id/edt_diachi"
+                android:layout_marginVertical="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập địa chỉ giao hàng"/>
+          </LinearLayout>
+
+        </LinearLayout>
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingTop="10dp">
+          <androidx.recyclerview.widget.RecyclerView
+              android:id="@+id/recyc_sp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"/>
+          <LinearLayout
+              android:visibility="gone"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_margin="5dp"
+              android:id="@+id/lineargone"
+              android:weightSum="10"
+              android:background="@color/white">
+            <ImageView
+                android:id="@+id/img1_sp_order"
+                android:padding="5dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/backpack"/>
+            <LinearLayout
+                android:paddingVertical="5dp"
+                android:weightSum="2"
+                android:layout_marginHorizontal="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+              <TextView
+                  android:gravity="center|left"
+                  android:layout_weight="1"
+                  android:id="@+id/tv1_sp_name"
+                  android:textColor="@color/black"
+                  android:textSize="15sp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="ten ao"/>
+
+              <RelativeLayout
+                  android:layout_weight="1"
+                  android:layout_marginTop="5dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv1_sp_size"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp" />
+                <TextView
+                    android:layout_toRightOf="@+id/tv1_sp_size"
+                    android:id="@+id/tv1_sp_gia"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="gia"/>
+                <TextView
+                    android:id="@+id/tv_sp_sl"
+                    android:layout_alignParentRight="true"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="x1"/>
+              </RelativeLayout>
+            </LinearLayout>
+
+          </LinearLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+      </LinearLayout>
+  </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_weight="0.1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:background="@color/white"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5">
+          <TextView
+              android:layout_marginRight="10dp"
+              android:id="@+id/tvdathang_sum"
+              android:textColor="@color/black"
+              android:gravity="center|right"
+              android:textSize="@dimen/size15"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:text="Tổng thanh toán: "/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dathang"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="@color/red"
+            android:text="Đặt hàng"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="@dimen/size18" />
+  </LinearLayout>
+
+
+</LinearLayout>

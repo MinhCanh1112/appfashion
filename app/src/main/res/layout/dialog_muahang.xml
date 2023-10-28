@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="10dp"
+    app:cardCornerRadius="10sp">
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/bot_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"/>
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/bot_x"
+                    android:layout_gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_close_24"/>
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_gravity="bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/bot_name"
+                        android:textColor="@color/black"
+                        android:text="Tên sản phẩm"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="15sp"
+                        android:gravity="center|left"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/bot_price"
+                        android:textColor="@color/red"
+                        android:text="190000 d"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="15sp"
+                        android:gravity="center|left"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearbot_size"
+            android:weightSum="10"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#B1AFAF"/>
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chọn kích thước"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"/>
+                <Spinner
+                    android:id="@+id/bot_spinner"
+                    android:layout_weight="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#B1AFAF"/>
+
+        <LinearLayout
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số lượng"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+            <ImageView
+                android:layout_weight="0.5"
+                android:src="@drawable/ic_baseline_remove_24"
+                android:id="@+id/bot_tru"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+
+            <TextView
+                android:text="1"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:layout_weight="0.5"
+                android:id="@+id/bot_sl"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:contentDescription="Số lượng"
+                android:textColor="@color/main2" />
+            <ImageView
+                android:layout_weight="0.5"
+                android:id="@+id/bot_cong"
+                android:src="@drawable/ic_baseline_add_24"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:text="+"
+                android:textSize="20dp"/>
+        </LinearLayout>
+
+
+        <View
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#B1AFAF"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bot_muahang"
+            android:layout_marginTop="15sp"
+            android:text="Mua hàng"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:background="@color/red"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
